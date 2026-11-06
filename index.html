@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1542: as Leis Novas e a defesa dos povos indígenas</title>
+<meta name="description" content="Marco histórico de 1542: as Leis Novas, Bartolomé de las Casas e o debate sobre os direitos dos povos indígenas nas Américas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--fundo:#0d2026;--sup:#16323a;--sup2:#1d4048;--texto:#eef1ea;--suave:#a6bdb8;--milho:#e3b23c;--barro:#c8643c;--linha:#2b4d56;--serif:"Cormorant Garamond",Georgia,serif;--sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;background:var(--fundo);color:var(--texto);font:1.08rem/1.7 var(--sans)}
+:focus-visible{outline:3px solid var(--milho);outline-offset:3px}
+a{color:var(--milho)}
+#prog{position:fixed;top:0;left:0;height:3px;width:0;background:var(--milho);z-index:30}
+nav{position:sticky;top:0;z-index:20;display:flex;gap:1.4rem;overflow-x:auto;padding:.9rem 5vw;background:rgba(13,32,38,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--linha)}
+nav a{flex:0 0 auto;color:var(--suave);text-decoration:none;font-weight:600;font-size:.95rem;padding-bottom:2px;border-bottom:2px solid transparent}
+nav a:hover,nav a.on{color:var(--texto);border-color:var(--milho)}
+.hero{min-height:90vh;display:flex;flex-direction:column;justify-content:center;padding:4rem 6vw;border-bottom:1px solid var(--linha);position:relative;overflow:hidden;background:radial-gradient(ellipse at 88% 15%,#235562 0,transparent 55%),radial-gradient(ellipse at 5% 100%,#3a2a1d 0,transparent 45%),var(--fundo)}
+.hero::after{content:"";position:absolute;right:-12vw;bottom:-14vw;width:50vw;height:50vw;border:2px solid rgba(227,178,60,.25);border-radius:50%;box-shadow:0 0 0 28px rgba(227,178,60,.06),0 0 0 60px rgba(227,178,60,.04)}
+.hero>*{position:relative;z-index:1}
+.kicker{color:var(--suave);margin:0 0 .5rem}
+.year{font:700 clamp(6rem,28vw,17rem)/.9 var(--serif);margin:0;color:var(--milho);letter-spacing:-.02em;animation:surgir 1.2s ease-out both}
+.lead{max-width:34rem;font:500 clamp(1.4rem,3.2vw,2rem)/1.35 var(--serif);margin:1.2rem 0 2rem}
+.btn{align-self:flex-start;background:var(--milho);color:#0d2026;font-weight:600;text-decoration:none;padding:.85rem 1.5rem;border-radius:4px;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:#f0c458}
+@keyframes surgir{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.block{max-width:46rem;margin:0 auto;padding:5rem 1.4rem 0}
+.wide{max-width:64rem}
+h2{font:700 clamp(2rem,5vw,2.9rem)/1.15 var(--serif);margin:0 0 1.2rem}
+h3{font:700 1.5rem var(--serif);margin:0 0 .4rem;color:var(--milho)}
+strong{color:var(--milho);font-weight:600}
+.rev{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
+.rev.vis{opacity:1;transform:none}
+.cols{display:grid;gap:1.2rem;margin-top:1.4rem}
+.col{background:var(--sup);padding:1.5rem;border-radius:6px;border-top:4px solid var(--barro)}
+.col.bom{border-top-color:var(--milho)}
+.col h3{color:var(--texto)}
+.col ul,.rules{margin:0;padding:0;list-style:none}
+.col li{padding:.3rem 0}
+.rules li{padding:1rem 1.2rem;border-left:3px solid var(--milho);margin-bottom:.8rem;background:var(--sup);border-radius:0 6px 6px 0}
+.hint{color:var(--suave);margin-top:-.6rem}
+.timeline{display:flex;gap:.5rem;overflow-x:auto;padding:1.2rem 0 1rem;border-bottom:2px solid var(--linha)}
+.timeline button{flex:0 0 auto;font:700 1.4rem var(--serif);color:var(--suave);background:transparent;border:1px solid var(--linha);border-radius:4px;padding:.5rem 1rem;cursor:pointer;transition:.2s}
+.timeline button:hover{color:var(--texto);border-color:var(--suave)}
+.timeline button[aria-selected=true]{background:var(--milho);color:#0d2026;border-color:var(--milho)}
+.panel{background:var(--sup);padding:1.8rem;margin-top:1.2rem;border-radius:6px;min-height:12rem;border-left:4px solid var(--milho)}
+.panel h3{font-size:1.9rem;color:var(--texto)}
+.panel.troca{animation:surgir .35s ease-out}
+.who{color:var(--suave);font-size:.98rem;margin-bottom:0}
+.perfil{display:grid;gap:1.6rem;align-items:start}
+.perfil blockquote{margin:0;padding:1.4rem 1.6rem;background:var(--sup2);border-radius:6px;font:italic 500 1.5rem/1.4 var(--serif)}
+.perfil blockquote small{display:block;margin-top:.8rem;font:400 .92rem var(--sans);color:var(--suave)}
+.voices{display:grid;gap:1.6rem}
+.voices>div{border-top:1px solid var(--linha);padding-top:1rem}
+.voices p{margin:0}
+.duelo{display:grid;gap:1.2rem;margin-top:1.4rem}
+.duelo .col{border-top-color:var(--suave)}
+details{background:var(--sup);border-radius:6px;margin-bottom:.7rem}
+summary{cursor:pointer;padding:1rem 1.2rem;font-weight:600;list-style:none}
+summary::after{content:"+";float:right;color:var(--milho);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"\2212"}
+details p{margin:0;padding:0 1.2rem 1.1rem}
+.quiz{background:var(--sup);padding:1.8rem;border-radius:6px}
+.quiz h3{color:var(--texto)}
+.opts{display:grid;gap:.6rem;margin:1rem 0}
+.opts button{text-align:left;font:inherit;color:var(--texto);background:var(--fundo);border:1px solid var(--linha);border-radius:4px;padding:.8rem 1rem;cursor:pointer;transition:.2s}
+.opts button:hover:not(:disabled){border-color:var(--milho)}
+.opts button.ok{background:#25523f;border-color:#5fbf8f}
+.opts button.no{background:#59302a;border-color:var(--barro)}
+.fb{min-height:3.4rem;color:var(--suave);margin:0}
+.next{font:600 1rem var(--sans);background:var(--milho);color:#0d2026;border:0;border-radius:4px;padding:.7rem 1.3rem;cursor:pointer}
+.next[hidden]{display:none}
+.nota{border:1px solid var(--linha);border-left:4px solid var(--barro);background:var(--sup);padding:1.2rem 1.4rem;border-radius:6px;margin-top:1.4rem}
+.fontes li{margin-bottom:.4rem}
+footer{margin-top:5rem;padding:2.4rem 1.4rem;border-top:1px solid var(--linha);text-align:center;color:var(--suave);font-size:.95rem}
+#topo{position:fixed;right:1.2rem;bottom:1.2rem;width:2.8rem;height:2.8rem;border-radius:50%;border:0;background:var(--milho);color:#0d2026;font-size:1.3rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s}
+#topo.on{opacity:1;pointer-events:auto}
+@media(min-width:760px){.cols,.duelo,.voices{grid-template-columns:1fr 1fr;gap:1.6rem}.perfil{grid-template-columns:1.1fr 1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.year,.panel.troca{animation:none}.rev{opacity:1;transform:none;transition:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<nav aria-label="Seções">
+  <a href="#contexto">Contexto</a><a href="#encomenda">Encomenda</a><a href="#leis">As leis</a><a href="#linha-do-tempo">Linha do tempo</a><a href="#lascasas">Las Casas</a><a href="#valladolid">Valladolid</a><a href="#vozes">Vozes</a><a href="#limites">Limites</a><a href="#quiz">Quiz</a><a href="#glossario">Glossário</a>
+</nav>
+
+<header class="hero">
+  <p class="kicker">Barcelona, 20 de novembro de 1542</p>
+  <h1 class="year" aria-label="1542">1542</h1>
+  <p class="lead">O ano em que a Coroa espanhola, pressionada por frades católicos, proibiu por lei a escravização dos povos indígenas nas Américas.</p>
+  <a class="btn" href="#contexto">Percorrer a história</a>
+</header>
+
+<main>
+<section class="block rev" id="contexto">
+  <h2>O que aconteceu em 1542</h2>
+  <p>Desde 1492, a conquista das Américas vinha acompanhada de trabalho forçado, escravização e mortes em massa causadas pela violência, pelo trabalho extenuante e pelas doenças trazidas da Europa.</p>
+  <p>Frades dominicanos e franciscanos, como Antonio de Montesinos e Bartolomé de las Casas, denunciaram esses abusos em nome da fé cristã. Em 1542, o imperador Carlos V assinou as <strong>Leis Novas das Índias</strong>, o conjunto de normas mais favorável aos indígenas até então.</p>
+</section>
+
+<section class="block wide rev" id="encomenda">
+  <h2>A encomenda: o problema</h2>
+  <p>A <strong>encomenda</strong> entregava grupos de indígenas a um colono espanhol, o encomendeiro. Em teoria, ele os protegeria e os ensinaria a fé cristã. Na prática, recebia trabalho e tributo, e muitas vezes tratava as pessoas como escravas.</p>
+  <div class="cols">
+    <div class="col"><h3>Como funcionava</h3><ul><li>Comunidades inteiras ficavam sob o poder de um colono.</li><li>Trabalho nas minas e nas lavouras sem pagamento justo.</li><li>Tributos pagos em ouro, alimentos e tecidos.</li><li>Encomendas podiam ser passadas aos filhos.</li></ul></div>
+    <div class="col bom"><h3>O que a Igreja questionou</h3><ul><li>Se os indígenas eram livres por natureza, não podiam ser escravizados.</li><li>Evangelizar não justificava obrigar ninguém a trabalhar.</li><li>A violência da conquista era pecado grave.</li><li>A Coroa tinha o dever moral de proteger os indígenas.</li></ul></div>
+  </div>
+</section>
+
+<section class="block rev" id="leis">
+  <h2>O que as Leis Novas determinavam</h2>
+  <ul class="rules">
+    <li>Proibiam a escravização de indígenas, inclusive os capturados em guerra.</li>
+    <li>Acabavam com as novas encomendas e com a herança das existentes: ao morrer o encomendeiro, os indígenas passavam à Coroa.</li>
+    <li>Retiravam encomendas de funcionários públicos, de religiosos e de quem tivesse cometido abusos.</li>
+    <li>Limitavam o trabalho forçado e o tributo exigido das comunidades.</li>
+    <li>Reforçavam os tribunais (Audiências) para ouvir queixas dos indígenas.</li>
+  </ul>
+</section>
+
+<section class="block wide rev" id="linha-do-tempo">
+  <h2>Linha do tempo</h2>
+  <p class="hint">Toque em um ano para ler o que aconteceu.</p>
+  <div class="timeline" role="tablist" aria-label="Anos" id="years"></div>
+  <article class="panel" id="panel" aria-live="polite" tabindex="-1">
+    <h3 id="panel-title"></h3><p id="panel-text"></p><p class="who" id="panel-who"></p>
+  </article>
+</section>
+
+<section class="block wide rev" id="lascasas">
+  <h2>Bartolomé de las Casas</h2>
+  <div class="perfil">
+    <div>
+      <p>Nascido em Sevilha, Las Casas foi para as Américas como colono e recebeu uma encomenda. Em 1514, depois de ouvir a pregação de frades dominicanos, abriu mão dela e passou a defender os indígenas.</p>
+      <p>Tornou-se dominicano, viajou várias vezes entre as Américas e a Espanha e foi bispo de Chiapas. Foi uma das vozes que levaram à criação das Leis Novas.</p>
+      <p>Sua <em>Brevíssima relação da destruição das Índias</em> foi escrita em 1542 e publicada em 1552. A obra influenciou o debate europeu, embora historiadores apontem exageros em alguns números.</p>
+    </div>
+    <blockquote>Para Las Casas, todos os povos do mundo são formados por seres humanos racionais, capazes de fé e de governo próprio.<small>Ideia central do seu pensamento, resumida aqui em palavras nossas</small></blockquote>
+  </div>
+</section>
+
+<section class="block wide rev" id="valladolid">
+  <h2>O debate de Valladolid (1550–1551)</h2>
+  <p>Carlos V suspendeu novas conquistas e convocou teólogos e juristas para discutir se a guerra contra os indígenas era justa. Os dois lados principais foram:</p>
+  <div class="duelo">
+    <div class="col"><h3>Juan Ginés de Sepúlveda</h3><p>Humanista e cronista. Usava Aristóteles para dizer que alguns povos seriam “servos por natureza”, e que a guerra e a tutela espanhola seriam justificadas para acabar com práticas como o sacrifício humano.</p></div>
+    <div class="col"><h3>Bartolomé de las Casas</h3><p>Defendeu que os indígenas tinham cidades, leis e religiões próprias, eram racionais e livres, e que a conquista pela força contrariava o Evangelho. A fé deveria ser proposta com paz e persuasão.</p></div>
+  </div>
+  <p>Os juízes não deram um veredito claro, e os dois lados afirmaram ter vencido. Mesmo assim, o debate mostrou que a justiça da conquista podia ser contestada publicamente.</p>
+</section>
+
+<section class="block wide rev" id="vozes">
+  <h2>Vozes da Igreja</h2>
+  <div class="voices">
+    <div><h3>Antonio de Montesinos</h3><p>Em 1511, em Santo Domingo, perguntou aos colonos com que direito faziam guerra e impunham servidão a pessoas que viviam em paz em suas terras.</p></div>
+    <div><h3>Francisco de Vitoria</h3><p>Teólogo de Salamanca. Argumentou que os indígenas eram donos legítimos de suas terras e de seu governo, e que a diferença de religião não justificava a conquista.</p></div>
+    <div><h3>Paulo III</h3><p>Na bula <em>Sublimis Deus</em> (1537), declarou que os indígenas são pessoas capazes de receber a fé e que não podem ser privados de liberdade nem de bens.</p></div>
+    <div><h3>Dominicanos e franciscanos</h3><p>Além de Las Casas, muitos missionários aprenderam línguas indígenas, registraram costumes e levaram queixas ao rei.</p></div>
+  </div>
+</section>
+
+<section class="block rev" id="limites">
+  <h2>Os limites da lei</h2>
+  <p>As Leis Novas provocaram revolta entre os colonos. No Peru, a rebelião de Gonzalo Pizarro terminou com a morte do vice-rei Blasco Núñez Vela, em 1546. Já em 1545 a Coroa revogou o artigo que acabava com a herança das encomendas.</p>
+  <p>Na prática, a lei foi aplicada só em parte e o trabalho forçado continuou sob outras formas.</p>
+  <div class="nota"><strong>Por que olhar com cuidado:</strong> parte do clero também participou da colonização e da exploração, e a defesa dos indígenas partia de uma visão europeia e cristã do mundo. Por isso 1542 é lembrado como um marco da defesa dos direitos indígenas, e não como o fim dos abusos.</div>
+</section>
+
+<section class="block rev" id="quiz">
+  <h2>Teste o que você aprendeu</h2>
+  <div class="quiz">
+    <h3 id="qn"></h3>
+    <p id="qt"></p>
+    <div class="opts" id="qo"></div>
+    <p class="fb" id="qf" aria-live="polite"></p>
+    <button class="next" id="qx" hidden>Próxima pergunta</button>
+  </div>
+</section>
+
+<section class="block rev" id="glossario">
+  <h2>Glossário</h2>
+  <details><summary>Encomenda</summary><p>Sistema em que a Coroa entregava indígenas a um colono, que recebia seu trabalho e tributo em troca de supostamente protegê-los e evangelizá-los.</p></details>
+  <details><summary>Bula papal</summary><p>Documento oficial emitido pelo papa. A <em>Sublimis Deus</em> (1537) é a bula mais lembrada na defesa dos indígenas.</p></details>
+  <details><summary>Audiência</summary><p>Tribunal e órgão de governo das colônias espanholas, que também recebia queixas dos indígenas.</p></details>
+  <details><summary>Conselho das Índias</summary><p>Órgão da Coroa espanhola que cuidava do governo e das leis das colônias americanas.</p></details>
+  <details><summary>Leis Novas</summary><p>Conjunto de normas de 1542 que proibiu a escravização de indígenas e restringiu a encomenda.</p></details>
+</section>
+
+<section class="block rev">
+  <h2>Para ir além</h2>
+  <ul class="fontes">
+    <li>Bartolomé de las Casas, <em>Brevíssima relação da destruição das Índias</em>.</li>
+    <li>Paulo III, bula <em>Sublimis Deus</em> (1537).</li>
+    <li>Francisco de Vitoria, <em>De Indis</em> (1539).</li>
+    <li>Leis Novas das Índias (Leyes Nuevas), 1542.</li>
+  </ul>
+</section>
+</main>
+
+<footer><p>Conteúdo de caráter educativo. Para aprofundar, consulte historiadores especializados na América colonial espanhola.</p></footer>
+<button id="topo" aria-label="Voltar ao topo">↑</button>
+
+<script>
+const eventos=[
+{ano:"1511",titulo:"O sermão de Montesinos",texto:"Em Santo Domingo, o frade dominicano Antonio de Montesinos condena em público a escravidão e os maus-tratos aos indígenas e pergunta se eles não são seres humanos. É o primeiro grande protesto da Igreja contra os abusos da conquista.",quem:"Antonio de Montesinos, dominicano"},
+{ano:"1512",titulo:"Leis de Burgos",texto:"A Coroa espanhola cria as primeiras normas para regular a encomenda, limitando o trabalho e exigindo instrução cristã. Pouco foi cumprido nas colônias, mas a discussão sobre os direitos dos indígenas passa a existir na lei.",quem:"Coroa de Castela"},
+{ano:"1537",titulo:"Bula Sublimis Deus",texto:"O papa Paulo III declara que os indígenas são pessoas verdadeiras, capazes de receber a fé, e que não devem ser privados de liberdade nem de seus bens, mesmo que ainda não sejam cristãos.",quem:"Papa Paulo III"},
+{ano:"1539",titulo:"As lições de Vitoria",texto:"Em Salamanca, o teólogo Francisco de Vitoria ensina que os indígenas têm domínio legítimo sobre suas terras e seu governo. Suas ideias influenciam o debate sobre direitos entre os povos.",quem:"Francisco de Vitoria, dominicano"},
+{ano:"1542",titulo:"As Leis Novas",texto:"Carlos V assina as Leis Novas das Índias: proíbem a escravização de indígenas, limitam a encomenda e acabam com sua herança. Las Casas escreve neste ano a Brevíssima relação da destruição das Índias, publicada em 1552.",quem:"Carlos V, com o apoio de Las Casas"},
+{ano:"1545",titulo:"Recuo da Coroa",texto:"Diante da rebelião dos colonos, sobretudo no Peru, o rei revoga o artigo que acabava com a herança das encomendas. As demais normas continuam, mas com aplicação irregular.",quem:"Coroa espanhola"},
+{ano:"1550",titulo:"O debate de Valladolid",texto:"Las Casas e o humanista Juan Ginés de Sepúlveda debatem se a conquista era justa e se os indígenas podiam ser submetidos à força. É uma das primeiras grandes discussões europeias sobre os direitos de outros povos.",quem:"Bartolomé de las Casas e Juan Ginés de Sepúlveda"}
+];
+eventos.sort((a,b)=>a.ano-b.ano);
+const $=id=>document.getElementById(id);
+const botoes=$("years"),painel=$("panel");
+function mostrar(i){const e=eventos[i];$("panel-title").textContent=e.ano+": "+e.titulo;$("panel-text").textContent=e.texto;$("panel-who").textContent=e.quem;
+botoes.querySelectorAll("button").forEach((b,j)=>b.setAttribute("aria-selected",j===i));
+painel.classList.remove("troca");void painel.offsetWidth;painel.classList.add("troca")}
+eventos.forEach((e,i)=>{const b=document.createElement("button");b.type="button";b.setAttribute("role","tab");b.textContent=e.ano;b.onclick=()=>mostrar(i);botoes.appendChild(b)});
+mostrar(eventos.findIndex(e=>e.ano==="1542"));
+
+const perguntas=[
+{q:"Em que ano foram assinadas as Leis Novas?",o:["1492","1542","1550"],c:1,f:"As Leis Novas foram assinadas por Carlos V em 1542."},
+{q:"Qual frade deixou sua encomenda e passou a defender os indígenas?",o:["Francisco de Vitoria","Antonio de Montesinos","Bartolomé de las Casas"],c:2,f:"Las Casas era encomendeiro e abriu mão da encomenda em 1514."},
+{q:"O que declarou a bula Sublimis Deus, de 1537?",o:["Que os indígenas eram pessoas livres e capazes de fé","Que a encomenda era obrigatória","Que a conquista era sempre justa"],c:0,f:"O papa Paulo III afirmou que os indígenas não podiam ser privados de liberdade nem de bens."},
+{q:"Quem debateu com Las Casas em Valladolid?",o:["Juan Ginés de Sepúlveda","Gonzalo Pizarro","Carlos V"],c:0,f:"Sepúlveda defendia que a guerra contra os indígenas podia ser justa."}
+];
+let n=0,pontos=0;
+function pergunta(){const p=perguntas[n];$("qn").textContent="Pergunta "+(n+1)+" de "+perguntas.length;$("qt").textContent=p.q;$("qf").textContent="";$("qx").hidden=true;
+const box=$("qo");box.innerHTML="";
+p.o.forEach((t,i)=>{const b=document.createElement("button");b.type="button";b.textContent=t;b.onclick=()=>{
+box.querySelectorAll("button").forEach((x,j)=>{x.disabled=true;if(j===p.c)x.classList.add("ok")});
+if(i===p.c){pontos++;$("qf").textContent="Correto. "+p.f}else{b.classList.add("no");$("qf").textContent="Não foi dessa vez. "+p.f}
+$("qx").textContent=n<perguntas.length-1?"Próxima pergunta":"Ver resultado";$("qx").hidden=false};box.appendChild(b)})}
+$("qx").onclick=()=>{if(n<perguntas.length-1){n++;pergunta()}else{$("qn").textContent="Resultado";$("qt").textContent="Você acertou "+pontos+" de "+perguntas.length+".";$("qo").innerHTML="";$("qf").textContent="";$("qx").textContent="Refazer o quiz";$("qx").onclick=()=>{n=0;pontos=0;location.hash="#quiz";location.reload()}}};
+pergunta();
+
+const links=[...document.querySelectorAll("nav a")],secs=links.map(a=>document.querySelector(a.hash));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("vis")}),{threshold:.12});
+document.querySelectorAll(".rev").forEach(s=>io.observe(s));
+function rolar(){const h=document.documentElement,y=scrollY;$("prog").style.width=(y/(h.scrollHeight-innerHeight)*100)+"%";
+$("topo").classList.toggle("on",y>800);
+let at=-1;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<innerHeight*.4)at=i});
+links.forEach((a,i)=>a.classList.toggle("on",i===at))}
+addEventListener("scroll",rolar,{passive:true});rolar();
+$("topo").onclick=()=>scrollTo({top:0});
+</script>
+</body>
+</html>
